@@ -32,31 +32,21 @@ Validated on the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database, 
 
 ## Core Features
 
-1. Strict Privacy Protection: Only soft label probability outputs are transmitted between clients and the central server, avoiding data leakage risks from raw data/parameter sharing.
+1. Strict Privacy Protection: Only soft label probability outputs are transmitted between clients and the central server, avoiding data leakage risks from raw data/parameter sharing. 严格隐私保护：客户端与服务端仅传输软标签概率输出，避免原始数据/模型参数共享带来的泄露风险，符合国际隐私规范。
 
-2. Heterogeneous Model Fusion: Seamlessly integrates CNN (for imaging), tree-based ensemble models (for genetics), and MLP (for transcriptomics) to adapt to different data characteristics.
+2. Heterogeneous Model Fusion: Seamlessly integrates CNN (for imaging), tree-based ensemble models (for genetics), and MLP (for transcriptomics) to adapt to different data characteristics. 异质模型融合：无缝整合适用于影像的CNN、适用于遗传学的树基集成模型、适用于转录组的MLP，适配不同数据特性。
 
-3. Stable & Balanced Performance: Outperforms traditional federated averaging algorithms, with balanced classification results for CN/MCI/AD (solving sample imbalance issues).
+3. Stable & Balanced Performance: Outperforms traditional federated averaging algorithms, with balanced classification results for CN/MCI/AD (solving sample imbalance issues). 性能稳定均衡：表现优于传统联邦平均算法，对CN/MCI/AD三类样本实现均衡分类，有效解决样本不平衡问题。
 
-4. High Scalability: The framework is adaptable for cross-institutional biomedical data collaboration and can be transferred to other neurodegenerative disease research.
+4. High Scalability: The framework is adaptable for cross-institutional biomedical data collaboration and can be transferred to other neurodegenerative disease research. 高度可扩展性：框架适用于跨机构生物医学数据协同研究，可迁移至帕金森、脑胶质瘤等其他神经退行性疾病研究。
 
-5. Reproducible Pipeline: Standardized data preprocessing and model training steps, with complete experimental visualization and result analysis.
-
-1. 严格隐私保护：客户端与服务端仅传输软标签概率输出，避免原始数据/模型参数共享带来的泄露风险，符合国际隐私规范。
-
-2. 异质模型融合：无缝整合适用于影像的CNN、适用于遗传学的树基集成模型、适用于转录组的MLP，适配不同数据特性。
-
-3. 性能稳定均衡：表现优于传统联邦平均算法，对CN/MCI/AD三类样本实现均衡分类，有效解决样本不平衡问题。
-
-4. 高度可扩展性：框架适用于跨机构生物医学数据协同研究，可迁移至帕金森、脑胶质瘤等其他神经退行性疾病研究。
-
-5. 可复现研究流程：标准化的数据预处理与模型训练步骤，配套完整的实验可视化与结果分析。
+5. Reproducible Pipeline: Standardized data preprocessing and model training steps, with complete experimental visualization and result analysis. 可复现研究流程：标准化的数据预处理与模型训练步骤，配套完整的实验可视化与结果分析。
 
 ## Data Source
 
 All experimental data is sourced from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (https://adni.loni.usc.edu), the most authoritative public dataset for AD research. All data is de-identified and complies with the FAIR data principles and the Declaration of Helsinki, ensuring strict adherence to research ethics.
 
-本项目所有实验数据均来自阿尔茨海默症神经影像倡议（ADNI）数据库（https://adni.loni.usc.edu）——目前阿尔茨海默症研究领域最权威的公共数据集。数据均经过去标识化处理，符合FAIR数据原则与赫尔辛基宣言，严格遵循科研伦理规范。
+本项目所有实验数据均来自阿尔茨海默症神经影像倡议（ADNI）数据库（https://adni.loni.usc.edu），这是目前阿尔茨海默症研究领域最权威的公共数据集。数据均经过去标识化处理，符合FAIR数据原则与赫尔辛基宣言，严格遵循科研伦理规范。
 
 ## Project Structure
 
@@ -68,6 +58,49 @@ Alzheimers-Disease/
 ├── outputs/              # Experimental results & visualizations (confusion matrix, loss curves, etc.)
 ├── visualization.ipynb   # Unified multi-modal result analysis & visualization
 └── README.md             # Project documentation (English/Chinese)
+
+Project Structure 纯Markdown格式（直接复制到README，适配GitHub显示，中英注释版）
+## Project Structure
+Alzheimers-Disease/
+├── DNA/                  # DNA-SNP数据处理与建模 | DNA-SNP data processing & modeling
+├── MRI/                  # MRI影像数据处理与建模 | MRI imaging data processing & modeling
+├── mRNA/                 # mRNA转录组数据处理与建模 | mRNA transcriptomic data processing & modeling
+├── FederatedLearning/    # 联邦学习框架实现（知识蒸馏） | Federated learning framework (knowledge distillation)
+├── outputs/              # 实验结果与可视化文件 | Experimental results & visualizations
+├── visualization.ipynb   # 多模态结果统一分析与可视化 | Multi-modal result analysis & visualization
+└── README.md             # 项目说明文档（中英双语） | Project documentation (English/Chinese)
+
+简洁无注释版（按需选择，纯英文/纯中文）
+
+纯英文简洁版
+## Project Structure
+Alzheimers-Disease/
+├── DNA/                  # DNA-SNP data processing & modeling
+├── MRI/                  # MRI imaging data processing & modeling
+├── mRNA/                 # mRNA transcriptomic data processing & modeling
+├── FederatedLearning/    # Federated learning with knowledge distillation
+├── outputs/              # Experimental results & visualizations
+├── visualization.ipynb   # Multi-modal result analysis
+└── README.md             # Project documentation
+
+纯中文简洁版
+## Project Structure
+Alzheimers-Disease/
+├── DNA/                  # DNA-SNP数据处理与建模
+├── MRI/                  # MRI影像数据处理与建模
+├── mRNA/                 # mRNA转录组数据处理与建模
+├── FederatedLearning/    # 联邦学习框架（知识蒸馏）
+├── outputs/              # 实验结果与可视化文件
+├── visualization.ipynb   # 多模态结果统一分析与可视化
+└── README.md             # 项目说明文档（中英双语）
+
+实操小提示
+
+1. 粘贴到GitHub的README.md中，会自动渲染成代码块+目录结构的样式，和你在仓库里看到的文件树一致；
+
+2. 目录前后的```是Markdown代码块标识，必须保留，格式才会工整；
+
+3. 若后续新增文件夹/文件，直接按这个格式在对应位置加一行即可，保持缩进一致（用2个空格/1个Tab）。
 
 ## Key Methodology
 
