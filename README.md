@@ -50,6 +50,7 @@ All experimental data is sourced from the Alzheimer’s Disease Neuroimaging Ini
 
 ## Project Structure
 
+```
 Alzheimers-Disease/
 ├── DNA/                  # DNA-SNP data processing & modeling
 ├── MRI/                  # MRI imaging data processing & modeling
@@ -58,49 +59,7 @@ Alzheimers-Disease/
 ├── outputs/              # Experimental results & visualizations (confusion matrix, loss curves, etc.)
 ├── visualization.ipynb   # Unified multi-modal result analysis & visualization
 └── README.md             # Project documentation (English/Chinese)
-
-Project Structure 纯Markdown格式（直接复制到README，适配GitHub显示，中英注释版）
-## Project Structure
-Alzheimers-Disease/
-├── DNA/                  # DNA-SNP数据处理与建模 | DNA-SNP data processing & modeling
-├── MRI/                  # MRI影像数据处理与建模 | MRI imaging data processing & modeling
-├── mRNA/                 # mRNA转录组数据处理与建模 | mRNA transcriptomic data processing & modeling
-├── FederatedLearning/    # 联邦学习框架实现（知识蒸馏） | Federated learning framework (knowledge distillation)
-├── outputs/              # 实验结果与可视化文件 | Experimental results & visualizations
-├── visualization.ipynb   # 多模态结果统一分析与可视化 | Multi-modal result analysis & visualization
-└── README.md             # 项目说明文档（中英双语） | Project documentation (English/Chinese)
-
-简洁无注释版（按需选择，纯英文/纯中文）
-
-纯英文简洁版
-## Project Structure
-Alzheimers-Disease/
-├── DNA/                  # DNA-SNP data processing & modeling
-├── MRI/                  # MRI imaging data processing & modeling
-├── mRNA/                 # mRNA transcriptomic data processing & modeling
-├── FederatedLearning/    # Federated learning with knowledge distillation
-├── outputs/              # Experimental results & visualizations
-├── visualization.ipynb   # Multi-modal result analysis
-└── README.md             # Project documentation
-
-纯中文简洁版
-## Project Structure
-Alzheimers-Disease/
-├── DNA/                  # DNA-SNP数据处理与建模
-├── MRI/                  # MRI影像数据处理与建模
-├── mRNA/                 # mRNA转录组数据处理与建模
-├── FederatedLearning/    # 联邦学习框架（知识蒸馏）
-├── outputs/              # 实验结果与可视化文件
-├── visualization.ipynb   # 多模态结果统一分析与可视化
-└── README.md             # 项目说明文档（中英双语）
-
-实操小提示
-
-1. 粘贴到GitHub的README.md中，会自动渲染成代码块+目录结构的样式，和你在仓库里看到的文件树一致；
-
-2. 目录前后的```是Markdown代码块标识，必须保留，格式才会工整；
-
-3. 若后续新增文件夹/文件，直接按这个格式在对应位置加一行即可，保持缩进一致（用2个空格/1个Tab）。
+```
 
 ## Key Methodology
 
